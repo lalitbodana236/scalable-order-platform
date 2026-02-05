@@ -1,15 +1,15 @@
-package com.platform.product.models;
+package com.platform.product.dtos;
 
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class Product extends BaseModel {
+public class FakeStoreProductDto {
+    private Long id;
     private String title;
     private String description;
     private String imageUrl;
-    private Double price;
-    private Category category;
-    
+    private double price;
+    private String category;
 }
